@@ -12,9 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/waffle/device.mk)
 
 # Inherit some common YAAP stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := yaap_waffle
+PRODUCT_NAME := infinity_waffle
 PRODUCT_DEVICE := waffle
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -37,3 +37,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=CPH2581
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
+
+# Flags
+INFINITY_MAINTAINER := DqrKnz
+TARGET_SUPPORTS_BLUR := true
+WITH_GAPPS := true
+TARGET_HAS_UDFPS := true
